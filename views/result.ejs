@@ -1,0 +1,22 @@
+<html>
+<head>
+<style>
+p{color: black;  font-weight: bold;}
+p1{text-decoration: underline; font-weight: bold; color: black}
+#wrapper{border-style: solid; border-color: black;width:400px; height: 400px;}
+button{margin-bottom: 100px; background-color:cornflowerblue; color: white;}
+</style>
+</head>
+<div id="wrapper">
+<p1> Submitted Info</p1>
+<p>name: <%= data.name %></p>
+<p>location:<%= data.location %></p>
+<p>language: <%= data.language %></p>
+<p>comment: <%= data.comment %></p>
+<button onclick="goBack()">Go Back</button>
+<script>
+function goBack() {window.history.back();
+}
+</script>
+</div>
+</html>   
